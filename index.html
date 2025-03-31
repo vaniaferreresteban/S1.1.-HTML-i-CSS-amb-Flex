@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vania Ferrer" />
+    <title>S1.1. HTML i CSS amb Flex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="main-nav">
+      <a href="./index.html"
+        ><img src="./Imagenes/logo-bookmark.svg" alt="Logo Bookmark"
+      /></a>
+      <ul>
+        <li>Features</li>
+        <li>Pricing</li>
+        <li>Contact</li>
+        <li>Login</li>
+      </ul>
+      <div id="icon-hamburger">
+        <img src="./Imagenes/icon-hamburger.svg" alt="" />
+      </div>
+    </nav>
+    <div class="wrapper content">
+      <section id="hero">
+        <div class="wide">
+          <img src="./Imagenes/illustration-hero.svg" alt="" />
+        </div>
+
+        <h2>A simple boookmark manager</h2>
+        <p>
+          A clean and simple interface to organize your davourite websites. Open
+          a new browser tab and see our sites load instantly. Try it for free.
+        </p>
+        <div class="button-wrapper">
+          <button class="blue">Get it on Chrome</button>
+          <button class="gray">Get it on Firefox</button>
+        </div>
+      </section>
+      <section id="features">
+        <h2>Features</h2>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync betweren your devices so you can access
+          them on the go.
+        </p>
+        <nav id="features-nav">
+          <div onclick="assignActiveFeaturesNav(0)">Simple Bookmmarking</div>
+          <div onclick="assignActiveFeaturesNav(1)">Speedy Searching</div>
+          <div onclick="assignActiveFeaturesNav(2)">Easy Sharing</div>
+        </nav>
+      </section>
+      <section id="tabs">
+        <div class="tab">
+          <div class="wide">
+            <img src="./Imagenes/illustration-features-tab-1.svg" alt="" />
+            <div></div>
+          </div>
+
+          <h2>Bookmark in one click</h2>
+          <p>
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </p>
+        </div>
+        <div class="tab">
+          <div class="wide">
+            <img src="./Imagenes/illustration-features-tab-2.svg" alt="" />
+          </div>
+          <h2>Speedy in one click</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            ea, quod fuga minima molestias dignissimos autem voluptatibus?
+            Eaque, dolorem!.
+          </p>
+        </div>
+        <div class="tab">
+          <div class="wide">
+            <img src="./Imagenes/illustration-features-tab-3.svg" alt="" />
+            <div></div>
+          </div>
+          <h2>Sharing in one click</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            ea, quod fuga minima molestias dignissimos autem voluptatibus?
+            Eaque, dolorem!.
+          </p>
+        </div>
+      </section>
+      <section id="download" class="wide">
+        <h2>Download the extension</h2>
+        <div class="extension-wrapper">
+          <img class="logo" src="./Imagenes/logo-chrome.svg" alt="" />
+          <h2>Add to Chrome</h2>
+          <p>Minimum version 62</p>
+          <img src="./Imagenes/bg-dots.svg" alt="" />
+          <button class="blue">Add & Install Extension</button>
+        </div>
+        <div class="extension-wrapper">
+          <img class="logo" src="./Imagenes/logo-firefox.svg" alt="" />
+          <h2>Add to Firefox</h2>
+          <p>Minimum version 55</p>
+          <img src="./Imagenes/bg-dots.svg" alt="" />
+          <button class="blue">Add & Install Extension</button>
+        </div>
+        <div class="extension-wrapper">
+          <img class="logo" src="./Imagenes/logo-opera.svg" alt="" />
+          <h2>Add to Opera</h2>
+          <p>Minimum version 46</p>
+          <img src="./Imagenes/bg-dots.svg" alt="" />
+          <button class="blue">Add & Install Extension</button>
+        </div>
+      </section>
+      <section id="faq">
+        <h2>Frquently Asked Questions</h2>
+        <p>
+          Here are some of our FAQs. If you have any other questions you'd like
+          answered please feel free to email us.
+        </p>
+        <ul>
+          <li onclick="assignActiveFAQ(0)">
+            <strong>What is Bookmark?</strong>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+              laudantium consectetur sit repellendus aut aperiam sed quam
+              pariatur qui neque libero enim, facere est, modi quibusdam
+              temporibus. Laborum, sunt ad!
+            </p>
+          </li>
+          <li onclick="assignActiveFAQ(1)">
+            <strong>How can i request a new browser?</strong>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+              laudantium consectetur sit repellendus aut aperiam sed quam
+              pariatur qui neque libero enim, facere est, modi quibusdam
+              temporibus. Laborum, sunt ad!
+            </p>
+          </li>
+          <li onclick="assignActiveFAQ(2)">
+            <strong>Is there a mobile ap?</strong>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+              laudantium consectetur sit repellendus aut aperiam sed quam
+              pariatur qui neque libero enim, facere est, modi quibusdam
+              temporibus. Laborum, sunt ad!
+            </p>
+          </li>
+          <li onclick="assignActiveFAQ(3)">
+            <strong>What about other Chromium browsers?</strong>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+              laudantium consectetur sit repellendus aut aperiam sed quam
+              pariatur qui neque libero enim, facere est, modi quibusdam
+              temporibus. Laborum, sunt ad!
+            </p>
+          </li>
+        </ul>
+        <button class="blue">More Info</button>
+      </section>
+    </div>
+    <footer>
+      <section id="contact">
+        <p><span class="blue">35.000+ ALREADY JOINED</span></p>
+        <h2><span class="blue">Stay up-to-date with what we're doing</span></h2>
+
+        <input
+          name="e-mail"
+          id="e-mail"
+          type="text"
+          placeholder="example@email/com"
+        />
+        <button type="submit">Contact Us</button>
+      </section>
+      <nav id="footer-nav">
+        <img src="./Imagenes/logo-bookmark-contrast.svg" alt="Logo Bookmark" />
+        <ul>
+          <a href="">
+            <li>Features</li>
+          </a>
+          <a href="">
+            <li>Pricing</li>
+          </a>
+          <a href="">
+            <li>Contact</li>
+          </a>
+          <a href="">
+            <li>
+              <img
+                src="./Imagenes/icon-facebook.svg"
+                alt="Logo de Facebook"
+              /><img src="./Imagenes/icon-twitter.svg" alt="Logo de Twitter" />
+            </li>
+          </a>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>
