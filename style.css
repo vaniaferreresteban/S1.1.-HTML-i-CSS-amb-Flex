@@ -556,5 +556,21 @@ section#hero button {
     flex: 1 1 auto;
   }
 }
+@media only screen and (min-width: 1400px) {
+  #html section,
+  #html nav {
+    padding: 0 10%;
+  }
+  #html section div.wide::after {
+    width: 200%;
+  }
+  #html #hero {
+    left: 15%;
+  }
+  #html #tabs ::after {
+    right: 15%;
+    left: auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
