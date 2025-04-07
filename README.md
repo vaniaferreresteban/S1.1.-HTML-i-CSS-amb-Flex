@@ -12,7 +12,7 @@ Aquest projecte consisteix en la creació i gestió d'una base de dades per a un
 
 ##📋 Requisits
 
-    Cap
+    Node
 
 
 ##🛠️ Instal·lació
