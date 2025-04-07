@@ -1,0 +1,202 @@
+$primary: #5265e1;
+$secondary: #fa5959;
+$crystal-gray: #f7f7f7;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body section,
+body footer,
+html section,
+html footer {
+  margin-top: 5vh;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+#html section div.wide::after {
+  width: 200%;
+}
+.navbar-toggler {
+  border: none;
+}
+
+main button {
+  box-shadow: 0 0.5em 0.5em -0.5em rgba(0, 0, 0, 0.2);
+}
+div.wide {
+  position: relative;
+}
+section#hero {
+  > div > div.wide::after {
+    position: absolute;
+    border-radius: 15em 0 0 15em;
+    top: 22%;
+    left: 22%;
+    height: 79%;
+    background-color: #5168df;
+    z-index: 1;
+    content: "";
+  }
+  div.wide img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 6;
+  }
+}
+#features {
+  li {
+    position: relative;
+    border-top: 1px solid lightgray;
+  }
+  li:nth-last-child(n) {
+    border-bottom: 1px solid lightgray;
+  }
+  li.active::after {
+    position: absolute;
+    height: 0;
+    bottom: 0;
+    width: 30%;
+    right: 35%;
+    border: 2px solid #fa5959;
+    content: "";
+  }
+}
+
+section#tabs {
+  .tab {
+    display: none;
+    box-sizing: visible;
+    img {
+      z-index: 5;
+      position: relative;
+    }
+    > div.wide::after {
+      position: absolute;
+      border-radius: 0em 15em 15em 0;
+      top: 18%;
+      right: 12%;
+      height: 90%;
+      background-color: #5168df;
+      z-index: 1;
+      content: "";
+    }
+  }
+  .tab.active {
+    display: flex;
+  }
+}
+
+#download {
+  .extension-wrapper > .extension {
+    box-shadow: 0 0.3em 1em -0.3em rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+  }
+}
+.accordion {
+  .accordion-item {
+    border: none;
+    border-top: 1px solid lightgray;
+    :not(.collapsed)::after {
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fa5959'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    }
+    ::after {
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235265e1'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    }
+  }
+  .accordion-item:nth-last-child(n) {
+    border-bottom: 1px solid lightgray;
+  }
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  background-color: #5266df;
+  margin: 0;
+}
+#contact p {
+  margin-top: 3em;
+}
+#contact h2 {
+  margin: 0 auto 1em;
+}
+#contact input,
+#contact button {
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+  width: 80%;
+  margin: 0 auto 2em;
+}
+#contact input {
+  height: 3em;
+  box-sizing: border-box;
+}
+#contact button {
+  font-size: 0.8em;
+}
+
+#footer-nav {
+  padding: 1em;
+  background-color: #242946;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+}
+#footer-nav > img,
+#footer-nav li {
+  padding: 1em 1em 0;
+}
+#footer-nav li {
+  text-align: center;
+}
+#footer-nav li img {
+  margin: 0 0.5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .extension-wrapper {
+    height: 35vh;
+  }
+  footer section#contact {
+    padding: 0 15% 0 15%;
+  }
+  footer section#contact button {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+  }
+  footer section#contact input,
+  footer section#contact button {
+    display: inline-block;
+  }
+  footer nav#footer-nav {
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+  }
+  footer nav#footer-nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+  }
+  footer nav#footer-nav ul :nth-last-child(1) {
+    text-align: right;
+    flex: 1 1 auto;
+  }
+}
