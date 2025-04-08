@@ -1,4 +1,4 @@
-#S1.1. HTML i CSS amb Flex
+#S1.2 SASS+BOOTSTRAP
 
 ##📄 Descripció - Enunciat de l'exercici
 
